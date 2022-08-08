@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <h1>Movie Data Page</h1>
+        Id: < %= movie.id % ><br/>
+        Name: < %= movie.name %> <br/>
+        Genres: <ul>
+            <% movie.genres.forEach(function(genre) {  %>
+
+                <li><%= genre  %> </li>
+                
+            <% }) %>
+        </ul>
+        Language: <%= movie.language %>
+        Picture: <img src=<%= movie.image %>><br>
+
+        <a href="">Back</a>
+
+        <input
+        action="action"
+        onclick="window.history.go(-3); return false;"
+        type="submit"
+        value="Back"/>
+    </body>
+</html>

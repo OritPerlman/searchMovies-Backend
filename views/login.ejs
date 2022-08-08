@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script src="../routes/login.js"></script>
+    </head>
+    <body>
+        <h3>Login Page</h3>
+        <form action="/login/getuserdata" method="POST">
+            <div>
+                <label>username:</label>
+                <input name="username" id="username" placeholder="Enter username" required>
+            </div>
+
+            <div>
+                <label>Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+            </div>
+           
+            <div>
+                <label><a href="/newaccount>Create New Account</a></label>
+            </div>
+            <input type = "submit" value="Log in">
+            
+        </form>
+
+        <h2><%=error%></h2>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <h1>Users Managment Page</h1>
+        <form action="/delete" method="post">
+            <% users.forEach(function(user) { %>
+                <input type="radio" id="radio" name="radio" value="<%=username%>"><br> 
+                <% })%>
+                <input type="submit" value="Delete">
+            </form>
+        
+            <a href="/createAccount"></a>Add New User</a></br> 
+            <a href="/editUsers"> Update User</a></br>  
+
+    </body>
+</html>

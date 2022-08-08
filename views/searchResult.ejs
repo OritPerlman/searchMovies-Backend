@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h1>Search Reasult Page</h1>
+        <table border="1">
+            <tr>
+                <th>Movies' name</th>
+                <th>Movies with same genre</th>
+            </tr>
+            <% movie.forEach(function(movie) { %>
+             <tr>
+                <td><a href="/menu/search/search/data"+<%= movie.id %>><%= movie.name %></a></td> 
+             </tr>
+            <% movies.forEach(function(movie) { %>
+                <tr>
+                    <td><a href="/menu/search/search/data"+ <%= movie.id %>><%= movie.name %></a></td> 
+                </tr>
+    
+            <%  })%>
+        </table>
+
+        <a href="/menu">Back to menu</a>
+    </body>
+</html>

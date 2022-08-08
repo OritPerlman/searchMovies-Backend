@@ -1,0 +1,40 @@
+<html>
+    <body>
+        <h3>Search Movie Page</h3>
+        <form action="/search" method="POST">
+            Name: <input type = "text" Name="name"><br/>
+            Genre:
+                <input type="radio" id="radio" name="radio" value="Drama"><label>Drama</label><br>
+                <input type="radio" id="radio" name="radio" value="Science-Fiction"><label>Science-Fiction</label><br>
+                <input type="radio" id= "radio" name="radio" value="Thriller"><label>Thriller</label><br>
+                <input type="radio" id="radio" name="radio" value="Action"><label>Action</label><br>
+                <input type="radio" id="radio" name="radio" value="Crime"><label>Crime</label><br>
+                <input type="radio" id="radio" name="radio" value="Horror"><label>Horror</label><br>
+                <input type="radio" id="radio" name="radio" value="Romance"><label>Romance</label><br>
+                <input type="radio" id="radio" name="radio" value="Adventure"><label>Adventure</label><br>
+                <input type="radio" id="radio" name="radio" value="Espionage"><label>Espionage</label><br>
+                <input type="radio" id="radio" name="radio" value="Music"><label>Music</label><br>
+                <input type="radio" id="radio" name="radio" value="Mystery"><label>Mystery</label><br>
+                <input type="radio" id="radio" name="radio" value="Supernatural"><label>Supernatural</label><br>
+                <input type="radio" id="radio" name="radio" value="Fantasy"><label>Fantasy</label><br>
+                <input type="radio" id="radio" name="radio" value="Family"><label>Family</label><br>
+                <input type="radio" id="radio" name="radio" value="Anime"><label>Anime</label><br>
+                <input type="radio" id="radio" name="radio" value="Comedy"><label>Comedy</label><br>
+                <input type="radio" id="radio" name="radio" value="History"><label>History</label><br>
+                <input type="radio" id="radio" name="radio" value="Legal"><label>Legal</label><br>
+                <input type="radio" id="radio" name="radio" value="Western"><label>Western</label><br>
+                <input type="radio" id="radio" name="radio" value="Sports"><label>Sports</label><br>
+                <input type="radio" id="radio" name="radio" value="War"><label>War</label><br>
+           
+            Language: <select name = "language">
+                <option value="English">English</option>
+                <option value="Japanese">Japanese</option>
+                <option value="Spanish">Spanish</option>
+                <option value="French">French</option>
+                <option value="Hebrew">Hebrew</option>                
+            </select>
+            <input type = "submit" value="search">
+            <button onclick="history.back()">Back</button>
+        </form>
+    </body>
+</html>

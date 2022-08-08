@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="/users" method="post">
+            <div>
+                Name: < %= user.name % ><br/>
+            </div>
+
+            <div>
+                Username: < %= user.username % ><br/>
+            </div>
+
+            <div>
+                Password: < %= user.password %> <br/>
+            </div>
+
+            <div>
+                Created-date:< %= user.date %> <br/>
+            </div>
+
+            <div>
+                Number of transactions:< %= user.num %> <br/>
+            </div>
+            <input type = "submit" value="save">
+            
+        </form>
+        
+        <h2><%=error&></h2>  
+        
+    </body>
+</html>
